@@ -1,0 +1,19 @@
+.band-website {
+    /* font-weight: 900; */
+    /* font-size: 1.5rem; */
+}
+
+.details {
+    max-width: 800px;
+}
+
+.contact {}
+
+.bio {}
+
+.band-info {
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+
+}
