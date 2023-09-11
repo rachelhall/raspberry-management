@@ -11,6 +11,12 @@
 
 .bio {}
 
+.social-row {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
 .band-info {
     display: flex;
     flex: 1;
