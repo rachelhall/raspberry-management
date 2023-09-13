@@ -1,11 +1,13 @@
 ---
+import Heading from "../components/Heading.astro";
+import InfoBox from "../components/InfoBox.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Raspberry Management">
     <img src="../../public/about.jpg" class="header-image" alt="" />
-    <div class="about-container">
-        <h2 class="section-heading">ABOUT</h2>
+    <InfoBox>
+        <Heading>ABOUT</Heading>
         <p style="color:black;">
             Coran Capshaw founded Red Light Management in 1991 in
             Charlottesville, VA, while helping Dave Matthews Band grow
@@ -23,7 +25,7 @@ import Layout from "../layouts/Layout.astro";
             extends into the fields of touring, commerce, festivals, licensing,
             branded entertainment, and artist-driven philanthropy.
         </p>
-    </div>
+    </InfoBox>
 </Layout>
 
 <style>

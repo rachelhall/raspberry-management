@@ -1,0 +1,27 @@
+---
+interface Props {
+    className?: string;
+    textColor?: "plum" | "black" | "white";
+}
+const { textColor = "plum" } = Astro.props;
+---
+
+<h3 class="section-heading" style={`color: var(--${textColor})`}>
+    <slot />
+</h3>
+<style define:vars={{ textColor }}>
+    .section-heading {
+        margin: 3rem 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--textColor);
+        &::before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 25px;
+            background: var(--plum);
+            margin-bottom: 0.75em;
+        }
+    }
+</style>

@@ -1,5 +1,6 @@
 ---
 import type { Artist } from "../lib/types/artist";
+import Heading from "./Heading.astro";
 import Socials from "./Socials.astro";
 
 interface Props {
@@ -11,7 +12,7 @@ const { bio, name, src } = artist;
 ---
 
 <div class="artist-detail">
-    <img src={src} alt=`Photo of ${name}` width="1000" />
+    <img src={src} alt=`Photo of ${name}` class="header-image" />
     <div class="details">
         <div>
             <h1 class="band-name">{name}</h1>
@@ -21,7 +22,7 @@ const { bio, name, src } = artist;
         <div class="band-info">
             <div>
                 <div>
-                    <h2 class="section-heading">ARTIST BIO</h2>
+                    <Heading>ARTIST BIO</Heading>
                     <p>
                         {bio}
                     </p>
@@ -41,7 +42,6 @@ const { bio, name, src } = artist;
 <style lang="scss">
     .artist-detail {
         margin: auto;
-        max-width: 800px;
     }
     .details {
         max-width: 800px;
@@ -60,18 +60,11 @@ const { bio, name, src } = artist;
     h2 {
         font-size: 1.5rem;
     }
-    .section-heading {
-        margin: 3rem 0 2rem;
-        font-size: 1.5rem;
-        font-weight: 900;
-        color: var(--plum);
-        &::before {
-            content: "";
-            display: block;
-            height: 10px;
-            width: 25px;
-            background: var(--plum);
-            margin-bottom: 0.75em;
-        }
+
+    .header-image {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: right top;
     }
 </style>

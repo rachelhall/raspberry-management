@@ -1,0 +1,42 @@
+---
+import Heading from "./Heading.astro";
+import InfoBox from "./InfoBox.astro";
+---
+
+<footer>
+    <div>
+        <h3 class="section-heading">CONTACT</h3>
+        <h3>Natalie Bancroft</h3>
+        <a
+            href="mailto:natalie@raspberrymanagement.com"
+            style="color:white; margin-top:.5rem;"
+        >
+            natalie@raspberrymanagement.com
+        </a>
+    </div>
+    <h3>© 2023 RASPBERRY MANAGEMENT</h3>
+</footer>
+<style>
+    footer {
+        height: 200px;
+        background-color: var(--plum);
+        padding: 4rem 16rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section-heading {
+        margin: 3rem 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--textColor);
+        &::before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 25px;
+            background: white;
+            margin-bottom: 0.75em;
+        }
+    }
+</style>
