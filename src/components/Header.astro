@@ -1,0 +1,36 @@
+---
+import NavBar from "./NavBar.astro";
+---
+
+<header>
+    <h1 class="text-gradient">
+        RASPBERRY <span style="display: block; font-size: 1.5rem; color: white;"
+            >Management</span
+        >
+    </h1>
+    <NavBar />
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+</style>

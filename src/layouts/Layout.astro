@@ -1,0 +1,82 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global lang="scss">
+	:root {
+		--berry: #f3004a;
+		--berry-hover: #e90047;
+		--leaf: #009253;
+		--plum: rgb(100, 108, 255);
+		--plum-hover: #8c91f6;
+		--plum-light: rgb(168, 172, 251);
+
+		--accent-gradient: linear-gradient(
+			45deg,
+			var(--plum),
+			var(--plum-light) 30%,
+			white 60%
+		);
+
+		color-scheme: light dark;
+		color: rgba(255, 255, 255, 0.87);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-image: linear-gradient(
+			to left top,
+			#242424,
+			#202021,
+			#1c1c1f,
+			#18191c,
+			#13151a
+		);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--plum);
+		&:hover {
+			color: var(--plum-hover);
+		}
+	}
+
+	main {
+		width: 1000px;
+		margin: auto;
+		padding: 0 20rem;
+		max-width: calc(100% - 10rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+	}
+</style>

@@ -1,0 +1,73 @@
+---
+import type { Artist } from "../lib/types/artist";
+import Socials from "./Socials.astro";
+
+interface Props {
+    artist: Artist;
+}
+const { artist } = Astro.props;
+
+const { bio, name, src } = artist;
+---
+
+<div class="artist-detail">
+    <img src={src} alt=`Photo of ${name}` width="1000" />
+    <div class="details">
+        <div>
+            <h1 class="band-name">{name}</h1>
+            <a class="link" href="www.mariela.band">www.mariela.band</a>
+        </div>
+        <Socials />
+        <div class="band-info">
+            <div>
+                <div>
+                    <h2 class="section-heading">ARTIST BIO</h2>
+                    <p>
+                        {bio}
+                    </p>
+                </div>
+            </div>
+            <div class="contact">
+                <h2 class="section-heading">CONTACT</h2>
+                <h2>MANAGEMENT</h2>
+                <a href="mailto:natalie@raspberrymanagement.com"
+                    >Natalie Bancroft</a
+                >
+            </div>
+        </div>
+    </div>
+</div>
+
+<style lang="scss">
+    .details {
+        max-width: 800px;
+        margin: 3rem auto;
+    }
+
+    .band-info {
+        display: flex;
+        flex: 1;
+        gap: 4rem;
+    }
+
+    .band-name {
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .section-heading {
+        margin: 3rem 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--plum);
+        &::before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 25px;
+            background: var(--plum);
+            margin-bottom: 0.75em;
+        }
+    }
+</style>
