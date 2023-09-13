@@ -3,11 +3,14 @@ import NavBar from "./NavBar.astro";
 ---
 
 <header>
-    <h1 class="text-gradient">
-        RASPBERRY <span style="display: block; font-size: 1.5rem; color: white;"
-            >Management</span
-        >
-    </h1>
+    <a href="/">
+        <h1 class="text-gradient">
+            RASPBERRY <span
+                style="display: block; font-size: 1.5rem; color: white;"
+                >Management</span
+            >
+        </h1>
+    </a>
     <NavBar />
 </header>
 
@@ -16,14 +19,13 @@ import NavBar from "./NavBar.astro";
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1000px;
+        margin: 1.75rem 12rem;
     }
     h1 {
         font-size: 3rem;
         font-weight: 700;
         line-height: 1;
         text-align: center;
-        margin-bottom: 1em;
     }
 
     .text-gradient {

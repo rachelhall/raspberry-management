@@ -4,6 +4,4 @@ import ArtistDetail from "./ArtistDetail.astro";
 interface Props {}
 ---
 
-<div>
-    {artists.map((artist) => <ArtistDetail artist={artist} />)}
-</div>
+{artists.map((artist) => <ArtistDetail artist={artist} />)}

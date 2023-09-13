@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Raspberry Management">
+    <img src="../../public/about.jpg" class="header-image" alt="" />
+    <div class="about-container">
+        <h2 class="section-heading">ABOUT</h2>
+        <p style="color:black;">
+            Coran Capshaw founded Red Light Management in 1991 in
+            Charlottesville, VA, while helping Dave Matthews Band grow
+            organically from local club favorite to one of the most renowned
+            touring groups of all time. Red Light has since developed into the
+            largest independent music management company in the world. We’re a
+            collective of like-minded individuals, international in scope,
+            united by our primary focus: to develop sustainable careers and
+            long-lasting legacies for our artists, and along the way, influence
+            the musical landscape for the better. Our diverse roster features
+            many uniquely talented artists from all genres including: Dave
+            Matthews Band, Luke Bryan, Lionel Richie, Enrique Iglesias, Dierks
+            Bentley, ODESZA, Chris Stapleton, Lady A, The Strokes and Phish. The
+            same entrepreneurial spirit that guides our artist development
+            extends into the fields of touring, commerce, festivals, licensing,
+            branded entertainment, and artist-driven philanthropy.
+        </p>
+    </div>
+</Layout>
+
+<style>
+    .section-heading {
+        margin: 2rem 0 2rem;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: var(--plum);
+        &::before {
+            content: "";
+            display: block;
+            height: 10px;
+            width: 25px;
+            background: var(--plum);
+            margin-bottom: 0.75em;
+        }
+    }
+
+    .header-image {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: right top;
+        filter: blur(3px);
+    }
+
+    .about-container {
+        background-color: white;
+        min-height: 400px;
+        margin: -5rem 8rem;
+        position: relative;
+        z-index: 2;
+        padding: 2rem 8rem;
+    }
+</style>
