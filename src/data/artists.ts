@@ -5,5 +5,10 @@ export const artists = {
                 Soccer Mommy. They've played all across the southeast while they were based in Nashville before moving out to San Diego in January 2022.
                 Since then, the band has been picking up steam in southern California, playing San Diego Pride Festival, SheFest and most rececntly the Idyllwild Flim Flam Festival.`,
         src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659258/mariela_hb0vdq.jpg"
+    },
+    rachel: {
+        name: "rachel",
+        bio: "",
+        src: "http://t0.gstatic.com/images?q=tbn:ANd9GcQrS4ngKsoRRnfCyxYxXa0wfZRaSAn32U9FNcX4lva-Hzxrr4Wk"
     }
 }
