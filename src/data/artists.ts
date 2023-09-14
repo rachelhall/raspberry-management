@@ -6,9 +6,9 @@ export const artists = {
                 Since then, the band has been picking up steam in southern California, playing San Diego Pride Festival, SheFest and most rececntly the Idyllwild Flim Flam Festival.`,
         src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659258/mariela_hb0vdq.jpg"
     },
-    lukeGibson: {
-        name: "Luke Gibson",
-        bio: "",
-        src: ""
-    }
+    // lukeGibson: {
+    //     name: "Luke Gibson",
+    //     bio: "",
+    //     src: ""
+    // }
 }
