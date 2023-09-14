@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import type { Artist } from "../lib/types/artist";
 import Heading from "./Heading.astro";
 import Socials from "./Socials.astro";
+import InfoBox from "./InfoBox.astro";
 
 interface Props {
     artist: Artist;
@@ -20,31 +21,32 @@ const { bio, name, src } = artist;
         width="50"
         height="50"
     />
-
-    <div class="details">
-        <div>
-            <h1 class="band-name">{name}</h1>
-            <a class="link" href="www.mariela.band">www.mariela.band</a>
-        </div>
-        <Socials />
-        <div class="band-info">
+    <InfoBox width="truncated">
+        <div class="details">
             <div>
+                <h1 class="band-name">{name}</h1>
+                <a class="link" href="www.mariela.band">www.mariela.band</a>
+            </div>
+            <Socials />
+            <div class="band-info">
                 <div>
-                    <Heading>ARTIST BIO</Heading>
-                    <p>
-                        {bio}
-                    </p>
+                    <div>
+                        <Heading>ARTIST BIO</Heading>
+                        <p>
+                            {bio}
+                        </p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <h2>MANAGEMENT</h2>
+                    <a href="mailto:natalie@raspberrymanagement.com"
+                        >Natalie Bancroft</a
+                    >
                 </div>
             </div>
-            <div class="contact">
-                <h2 class="section-heading">CONTACT</h2>
-                <h2>MANAGEMENT</h2>
-                <a href="mailto:natalie@raspberrymanagement.com"
-                    >Natalie Bancroft</a
-                >
-            </div>
         </div>
-    </div>
+    </InfoBox>
 </div>
 
 <style lang="scss">

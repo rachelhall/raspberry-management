@@ -5,7 +5,7 @@ interface Props {
     order?: "front" | "back";
 }
 
-const { color = "light", width = "full", order = "back" } = Astro.props;
+const { color = "white", width = "full", order = "back" } = Astro.props;
 
 const backgroundColor =
     color === "white"
@@ -17,13 +17,28 @@ const backgroundColor =
 const containerMargin = width === "truncated" ? "0 12rem" : "0";
 const transform = width === "truncated" ? "-100px" : "0";
 const zIndex = order === "front" ? 2 : 1;
+const textColor =
+    color === "white"
+        ? "var(--black)"
+        : color === "plum"
+        ? "white"
+        : "var(--black)";
 ---
 
 <div class="container">
     <slot />
 </div>
-<style define:vars={{ backgroundColor, containerMargin, transform, zIndex }}>
+<style
+    define:vars={{
+        backgroundColor,
+        containerMargin,
+        transform,
+        zIndex,
+        textColor,
+    }}
+>
     .container {
+        color: var(--textColor);
         position: relative;
         display: flex;
         flex-direction: column;

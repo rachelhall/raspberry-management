@@ -16,7 +16,7 @@ export function getStaticPaths() {
                 data: artists.mariela,
             },
         },
-        // { params: { artist: "rachel" }, props: { data: artists.rachel } },
+        { params: { artist: "luke-gibson" }, props: { data: artists.rachel } },
     ];
 }
 
@@ -45,12 +45,22 @@ const { data } = Astro.props;
                 </div>
                 <div class="contact">
                     <Heading align="right" textColor="plum">CONTACT</Heading>
-                    <h2 class="text" 2>MANAGEMENT</h2>
-                    <a
-                        style="text-align: right;"
-                        href="mailto:natalie@raspberrymanagement.com"
-                        >Natalie Bancroft</a
-                    >
+                    <div class="contact-group">
+                        <h2 class="text" 2>MANAGEMENT</h2>
+                        <a
+                            style="text-align: right;"
+                            href="mailto:natalie@raspberrymanagement.com"
+                            >Natalie Bancroft</a
+                        >
+                    </div>
+                    <div class="contact-group">
+                        <h2>BOOKING</h2>
+                        <a
+                            style="text-align: right;"
+                            href="mailto:natalie@raspberrymanagement.com"
+                            >Natalie Bancroft</a
+                        >
+                    </div>
                 </div>
             </div>
         </InfoBox>
@@ -61,6 +71,13 @@ const { data } = Astro.props;
     .contact {
         display: flex;
         flex-direction: column;
+    }
+
+    .contact-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 1rem;
     }
     .artist-detail {
         margin: auto;

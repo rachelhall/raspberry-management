@@ -1,16 +1,27 @@
 ---
+import { Image } from "astro:assets";
 import NavBar from "./NavBar.astro";
+import raspberry from "../lib/icons/raspberry_new_color.svg";
 ---
 
 <header>
-    <a href="/">
-        <h1 class="text-gradient">
-            RASPBERRY <span
-                style="display: block; font-size: 1.5rem; color: white;"
-                >Management</span
-            >
-        </h1>
-    </a>
+    <div class="logo">
+        <a href="/">
+            <h1 class="text-gradient">
+                RASPBERRY <span
+                    style="display: block; font-size: 1.5rem; color: white;"
+                    >Management</span
+                >
+            </h1>
+        </a>
+        <!-- <Image
+            src={raspberry}
+            alt="Cartoon drawing of a raspberry"
+            height="36"
+            width="36"
+            style="margin-top: .5rem"
+        /> -->
+    </div>
     <NavBar />
 </header>
 
@@ -28,7 +39,13 @@ import NavBar from "./NavBar.astro";
         text-align: center;
     }
 
+    .logo {
+        display: flex;
+        gap: 1rem;
+    }
+
     .text-gradient {
+        height: 5rem;
         background-image: var(--accent-gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
