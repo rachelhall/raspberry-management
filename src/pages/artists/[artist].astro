@@ -1,0 +1,84 @@
+---
+import Heading from "../../components/Heading.astro";
+import Socials from "../../components/Socials.astro";
+import Layout from "../../layouts/Layout.astro";
+
+import { artists } from "../../data/artists";
+
+export function getStaticPaths() {
+    return [
+        { params: { artist: "mariela" } },
+        { params: { artist: "rachel" } },
+    ];
+}
+
+const { artist } = Astro.params;
+
+const name = artist ?? "";
+
+const { bio, src } = artists[artist];
+---
+
+<Layout title="Raspberry Management">
+    <div class="artist-detail">
+        <img
+            src="../../../public/mariela.jpg"
+            alt=`Photo of ${artist}`
+            class="header-image"
+        />
+        <div class="details">
+            <div>
+                <h1 class="band-name">{artist}</h1>
+                <a class="link" href="www.mariela.band">www.mariela.band</a>
+            </div>
+            <Socials />
+            <div class="band-info">
+                <div>
+                    <div>
+                        <Heading>ARTIST BIO</Heading>
+                        <p>
+                            {bio}
+                        </p>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <h2>MANAGEMENT</h2>
+                    <a href="mailto:natalie@raspberrymanagement.com"
+                        >Natalie Bancroft</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style lang="scss">
+    .artist-detail {
+        margin: auto;
+    }
+    .details {
+        max-width: 800px;
+        margin: 3rem auto;
+    }
+
+    .band-info {
+        display: flex;
+        flex: 1;
+        gap: 4rem;
+    }
+
+    .band-name {
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .header-image {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: right top;
+    }
+</style>
