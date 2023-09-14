@@ -7,25 +7,26 @@ import { artists } from "../../data/artists";
 
 export function getStaticPaths() {
     return [
-        { params: { artist: "mariela" } },
+        {
+            params: {
+                artist: "mariela",
+            },
+            props: {
+                data: artists.mariela,
+            },
+        },
         { params: { artist: "rachel" } },
     ];
 }
 
 const { artist } = Astro.params;
 
-const name = artist ?? "";
-
-const { bio, src } = artists[artist];
+const { data } = Astro.props;
 ---
 
 <Layout title="Raspberry Management">
     <div class="artist-detail">
-        <img
-            src="../../../public/mariela.jpg"
-            alt=`Photo of ${artist}`
-            class="header-image"
-        />
+        <img src={data.src} alt=`Photo of ${artist}` class="header-image" />
         <div class="details">
             <div>
                 <h1 class="band-name">{artist}</h1>
@@ -37,7 +38,7 @@ const { bio, src } = artists[artist];
                     <div>
                         <Heading>ARTIST BIO</Heading>
                         <p>
-                            {bio}
+                            {data.bio}
                         </p>
                     </div>
                 </div>
