@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import type { Artist } from "../lib/types/artist";
 import Heading from "./Heading.astro";
 import Socials from "./Socials.astro";
@@ -12,7 +13,14 @@ const { bio, name, src } = artist;
 ---
 
 <div class="artist-detail">
-    <img src={src} alt=`Photo of ${name}` class="header-image" />
+    <Image
+        src={src}
+        alt=`Photo of ${name}`
+        class="header-image"
+        width="50"
+        height="50"
+    />
+
     <div class="details">
         <div>
             <h1 class="band-name">{name}</h1>

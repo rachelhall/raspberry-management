@@ -4,39 +4,35 @@ import InfoBox from "./InfoBox.astro";
 ---
 
 <footer>
-    <div>
-        <h3 class="section-heading">CONTACT</h3>
-        <h3>Natalie Bancroft</h3>
-        <a
-            href="mailto:natalie@raspberrymanagement.com"
-            style="color:white; margin-top:.5rem;"
-        >
-            natalie@raspberrymanagement.com
-        </a>
-    </div>
-    <h3>© 2023 RASPBERRY MANAGEMENT</h3>
+    <InfoBox color="plum">
+        <div class="inner-container">
+            <h3>© 2023 RASPBERRY MANAGEMENT</h3>
+            <div>
+                <Heading textColor="white" align="right">CONTACT</Heading>
+                <h3 style=" text-align: right;">Natalie Bancroft</h3>
+                <a
+                    href="mailto:natalie@raspberrymanagement.com"
+                    style="color:white; margin-top:.75rem;text-align: right;"
+                >
+                    natalie@raspberrymanagement.com
+                </a>
+            </div>
+        </div>
+    </InfoBox>
 </footer>
 <style>
     footer {
-        height: 200px;
         background-color: var(--plum);
-        padding: 2rem 16rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: -10rem 0 0;
+        padding: 6rem 0 2rem;
     }
-    .section-heading {
-        margin: 3rem 0 2rem;
-        font-size: 1.5rem;
-        font-weight: 900;
-        color: var(--textColor);
-        &::before {
-            content: "";
-            display: block;
-            height: 10px;
-            width: 25px;
-            background: white;
-            margin-bottom: 0.75em;
-        }
+
+    .inner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 </style>

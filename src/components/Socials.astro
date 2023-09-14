@@ -1,16 +1,20 @@
+---
+import { facebook, spotify, instagram } from "../lib/icons";
+import { Image } from "astro:assets";
+---
+
 <div class="social-row">
-    <a href="https://www.instagram.com/mariela.band/" target="_blank"
-        ><img alt="Artist's website" src="../../public/instagram.svg" /></a
+    <a href="https://www.instagram.com/mariela.band/" target="_blank">
+        <Image alt="Instagram" src={instagram} /></a
     >
     <a
         href="https://open.spotify.com/artist/0fOdB0OUb1fBfHf8V4N3Hy?si=gmxooXNsQ9qUdYhnZ1ou6Q"
-        target="_blank"><img alt="Spotify" src="../../public/spotify.svg" /></a
+        target="_blank"><Image alt="Spotify" src={spotify} /></a
     >
     <a
         style="margin-top:-3px"
         href="https://www.facebook.com/profile.php?id=61551043084078"
-        target="_blank"
-        ><img alt="Facebook" src="../../public/facebook.svg" /></a
+        target="_blank"><Image alt="Facebook" src={facebook} /></a
     >
 </div>
 

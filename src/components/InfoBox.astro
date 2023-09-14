@@ -1,13 +1,39 @@
+---
+interface Props {
+    width?: "full" | "truncated";
+    color?: "white" | "plum" | "berry";
+    order?: "front" | "back";
+}
+
+const { color = "light", width = "full", order = "back" } = Astro.props;
+
+const backgroundColor =
+    color === "white"
+        ? "white"
+        : color === "plum"
+        ? "var(--plum)"
+        : "var(--black)";
+
+const containerMargin = width === "truncated" ? "0 8rem" : "0";
+const transform = width === "truncated" ? "-100px" : "0";
+const zIndex = order === "front" ? 2 : 1;
+---
+
 <div class="container">
     <slot />
 </div>
-<style>
+<style define:vars={{ backgroundColor, containerMargin, transform, zIndex }}>
     .container {
-        min-height: 400px;
-        margin: -5rem 8rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin: var(--containerMargin);
         position: relative;
         z-index: 2;
         padding: 2rem 8rem;
-        background-color: white;
+        background-color: var(--backgroundColor);
+        transform: translateY(var(--transform));
+        z-index: var(--zIndex);
     }
 </style>
