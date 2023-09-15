@@ -5,6 +5,8 @@ import Layout from "../../layouts/Layout.astro";
 
 import { artists } from "../../data/artists";
 import InfoBox from "../../components/InfoBox.astro";
+import Hero from "../../components/Hero.astro";
+import ArtistDetail from "../../components/ArtistDetail.astro";
 
 export function getStaticPaths() {
     return [
@@ -29,87 +31,5 @@ const { data } = Astro.props;
 ---
 
 <Layout title="Raspberry Management">
-    <div class="artist-detail">
-        <img src={data.src} alt=`Photo of ${artist}` class="header-image" />
-        <InfoBox color="white" width="truncated">
-            <div>
-                <h1 class="band-name">{artist}</h1>
-                <a class="link" href="www.mariela.band">www.mariela.band</a>
-            </div>
-            <Socials />
-            <div class="band-info">
-                <div>
-                    <div>
-                        <Heading>ARTIST BIO</Heading>
-                        <p class="text">
-                            {data.bio}
-                        </p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <Heading align="right" textColor="plum">CONTACT</Heading>
-                    <div class="contact-group">
-                        <h2 class="text" 2>MANAGEMENT</h2>
-                        <a
-                            style="text-align: right;"
-                            href="mailto:natalie@raspberrymanagement.com"
-                            >Natalie Bancroft</a
-                        >
-                    </div>
-                    <div class="contact-group">
-                        <h2>BOOKING</h2>
-                        <a
-                            style="text-align: right;"
-                            href="mailto:natalie@raspberrymanagement.com"
-                            >Natalie Bancroft</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </InfoBox>
-    </div>
+    <ArtistDetail artist={data} />
 </Layout>
-
-<style lang="scss">
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact-group {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-bottom: 1rem;
-    }
-    .artist-detail {
-        margin: auto;
-    }
-    .details {
-        max-width: 800px;
-        margin: 3rem auto;
-    }
-
-    .band-info {
-        display: flex;
-        flex: 1;
-        gap: 6rem;
-    }
-
-    .band-name {
-        color: var(--black);
-        text-transform: uppercase;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .text {
-        color: var(--black);
-    }
-    .header-image {
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-        object-position: right top;
-    }
-</style>

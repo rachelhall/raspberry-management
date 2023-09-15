@@ -1,47 +1,48 @@
 ---
-import { Image } from "astro:assets";
 import NavBar from "./NavBar.astro";
-import raspberry from "../lib/icons/raspberry_new_color.svg";
 ---
 
 <header>
     <div class="logo">
         <a href="/">
-            <h1 class="text-gradient">
-                RASPBERRY <span
-                    style="display: block; font-size: 1.5rem; color: white;"
-                    >Management</span
-                >
+            <h1 class="text-gradient large-screen">
+                RASPBERRY <span>Management</span>
             </h1>
+            <h1 class="text-gradient mobile">RM</h1>
         </a>
-        <!-- <Image
-            src={raspberry}
-            alt="Cartoon drawing of a raspberry"
-            height="36"
-            width="36"
-            style="margin-top: .5rem"
-        /> -->
     </div>
+
     <NavBar />
 </header>
 
-<style>
+<style lang="scss">
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 1.75rem 12rem;
     }
-    h1 {
-        font-size: 3rem;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-    }
 
     .logo {
         display: flex;
         gap: 1rem;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+            text-align: center;
+        }
+
+        span {
+            display: block;
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+
+    .mobile {
+        display: none;
     }
 
     .text-gradient {
@@ -51,5 +52,20 @@ import raspberry from "../lib/icons/raspberry_new_color.svg";
         -webkit-text-fill-color: transparent;
         background-size: 400%;
         background-position: 0%;
+    }
+    @media screen and (max-width: 480px) {
+        header {
+            margin: 1rem;
+        }
+        .large-screen {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+
+        .text-gradient {
+            height: unset;
+        }
     }
 </style>

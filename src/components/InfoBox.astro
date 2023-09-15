@@ -23,6 +23,9 @@ const textColor =
         : color === "plum"
         ? "white"
         : "var(--black)";
+
+const containerMarginMobile = width === "truncated" ? "0 2rem" : "0";
+const transformMobile = width === "truncated" ? "-20px" : "0";
 ---
 
 <div class="container">
@@ -32,7 +35,9 @@ const textColor =
     define:vars={{
         backgroundColor,
         containerMargin,
+        containerMarginMobile,
         transform,
+        transformMobile,
         zIndex,
         textColor,
     }}
@@ -50,5 +55,13 @@ const textColor =
         background-color: var(--backgroundColor);
         transform: translateY(var(--transform));
         z-index: var(--zIndex);
+    }
+
+    @media screen and (max-width: 480px) {
+        .container {
+            padding: 2rem;
+            margin: 0;
+            transform: translateY(0);
+        }
     }
 </style>

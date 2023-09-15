@@ -1,0 +1,27 @@
+---
+interface Props {
+    src: string;
+    alt?: string;
+    blur?: boolean;
+}
+const { src, alt, blur } = Astro.props;
+const imageblur = blur ? "2px" : "0";
+---
+
+<img src={src} alt={alt} class="hero-image" />
+
+<style define:vars={{ imageblur }}>
+    .hero-image {
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        object-position: right top;
+        filter: blur(var(--imageblur));
+    }
+
+    @media screen and (max-width: 480px) {
+        .hero-image {
+            height: unset;
+        }
+    }
+</style>

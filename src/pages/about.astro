@@ -1,17 +1,15 @@
 ---
 import Heading from "../components/Heading.astro";
+import Hero from "../components/Hero.astro";
 import InfoBox from "../components/InfoBox.astro";
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
 ---
 
 <Layout title="Raspberry Management">
-    <Image
+    <Hero
         src="https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659301/about_sm_hohxth.jpg"
-        class="header-image"
         alt="Mariela performing at SheFest 2023"
-        height="50"
-        width="50"
+        blur={true}
     />
     <InfoBox color="white" width="truncated" order="front">
         <Heading>ABOUT</Heading>

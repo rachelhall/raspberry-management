@@ -4,6 +4,7 @@ import type { Artist } from "../lib/types/artist";
 import Heading from "./Heading.astro";
 import Socials from "./Socials.astro";
 import InfoBox from "./InfoBox.astro";
+import Hero from "./Hero.astro";
 
 interface Props {
     artist: Artist;
@@ -14,33 +15,37 @@ const { bio, name, src } = artist;
 ---
 
 <div class="artist-detail">
-    <Image
-        src={src}
-        alt=`Photo of ${name}`
-        class="header-image"
-        width="50"
-        height="50"
-    />
-    <InfoBox width="truncated">
-        <div class="details">
+    <Hero src={src} alt=`Photo of ${name}` />
+    <InfoBox color="white" width="truncated">
+        <div>
+            <h1 class="band-name">{name}</h1>
+            <a class="link" href="www.mariela.band">www.mariela.band</a>
+        </div>
+        <Socials />
+        <div class="band-info">
             <div>
-                <h1 class="band-name">{name}</h1>
-                <a class="link" href="www.mariela.band">www.mariela.band</a>
-            </div>
-            <Socials />
-            <div class="band-info">
                 <div>
-                    <div>
-                        <Heading>ARTIST BIO</Heading>
-                        <p>
-                            {bio}
-                        </p>
-                    </div>
+                    <Heading>ARTIST BIO</Heading>
+                    <p class="text">
+                        {bio}
+                    </p>
                 </div>
-                <div class="contact">
-                    <h2 class="section-heading">CONTACT</h2>
-                    <h2>MANAGEMENT</h2>
-                    <a href="mailto:natalie@raspberrymanagement.com"
+            </div>
+            <div class="contact">
+                <Heading align="right" textColor="plum">CONTACT</Heading>
+                <div class="contact-group">
+                    <h2 class="text" 2>MANAGEMENT</h2>
+                    <a
+                        style="text-align: right;"
+                        href="mailto:natalie@raspberrymanagement.com"
+                        >Natalie Bancroft</a
+                    >
+                </div>
+                <div class="contact-group">
+                    <h2>BOOKING</h2>
+                    <a
+                        style="text-align: right;"
+                        href="mailto:natalie@raspberrymanagement.com"
                         >Natalie Bancroft</a
                     >
                 </div>
@@ -50,6 +55,17 @@ const { bio, name, src } = artist;
 </div>
 
 <style lang="scss">
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 1rem;
+    }
     .artist-detail {
         margin: auto;
     }
@@ -61,20 +77,24 @@ const { bio, name, src } = artist;
     .band-info {
         display: flex;
         flex: 1;
-        gap: 4rem;
+        gap: 6rem;
     }
 
     .band-name {
+        color: var(--black);
         text-transform: uppercase;
     }
     h2 {
         font-size: 1.5rem;
     }
+    .text {
+        color: var(--black);
+    }
 
-    .header-image {
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-        object-position: right top;
+    @media screen and (max-width: 480px) {
+        .band-info {
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 </style>
