@@ -1,12 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import NavBar from "../components/NavBar.astro";
-import Artists from "../components/Artists.astro";
-import Header from "../components/Header.astro";
+export const prerender = true;
 ---
 
-<Layout title="Raspberry Management">
-	<Artists />
-</Layout>
-
-<style></style>
+<meta http-equiv="refresh" content="0; url=/artists" />
