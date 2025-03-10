@@ -4,4 +4,4 @@ import ArtistDetail from "./ArtistDetail.astro";
 interface Props {}
 ---
 
-{Object.entries(artists).map((artist) => <ArtistDetail artist={artist[1]} />)}
+{artists.map((artist) => <ArtistDetail artist={artist} />)}

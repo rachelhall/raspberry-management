@@ -1,5 +1,6 @@
 export type Artist = {
-    bio: string;
-    name: string;
-    src: string;
-}
+  slug: string;
+  bio: string;
+  name: string;
+  src: string;
+};

@@ -9,20 +9,32 @@ import Hero from "../../components/Hero.astro";
 import ArtistDetail from "../../components/ArtistDetail.astro";
 
 export function getStaticPaths() {
-    return [
-        {
-            params: {
-                artist: "mariela",
-            },
-            props: {
-                data: artists.mariela,
-            },
-        },
-        // {
-        //     params: { artist: "luke-gibson" },
-        //     props: { data: artists.lukeGibson },
-        // },
-    ];
+  return [
+    {
+      params: {
+        artist: "mariela",
+      },
+      props: {
+        data: artists[0],
+      },
+    },
+    {
+      params: {
+        artist: "saint-misty",
+      },
+      props: {
+        data: artists[1],
+      },
+    },
+    {
+      params: {
+        artist: "daddy",
+      },
+      props: {
+        data: artists[2],
+      },
+    },
+  ];
 }
 
 const { artist } = Astro.params;
@@ -31,5 +43,5 @@ const { data } = Astro.props;
 ---
 
 <Layout title="Raspberry Management">
-    <ArtistDetail artist={data} />
+  <ArtistDetail artist={data} />
 </Layout>

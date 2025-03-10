@@ -1,0 +1,43 @@
+---
+import type { Artist } from "../lib/types/artist";
+
+const { artist } = Astro.props;
+
+interface Props {
+  artist: Artist;
+}
+---
+
+<div>
+  <a href=`artists/${artist.slug}`>
+    {
+      artist.src ? (
+        <img height="300" src={artist.src} />
+      ) : (
+        <div class="photo-placeholder" />
+      )
+    }
+  </a>
+  <p class="name">{artist.name}</p>
+</div>
+<style>
+  img {
+    border-radius: 0.5rem;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+  .name {
+    font-weight: 500;
+  }
+
+  .photo-placeholder {
+    height: 300px;
+    width: 400px;
+    background: red;
+  }
+  button {
+    background: none;
+    border: none;
+  }
+</style>

@@ -6,50 +6,54 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Raspberry Management">
-    <Hero
-        src="https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659301/about_sm_hohxth.jpg"
-        alt="Mariela performing at SheFest 2023"
-        blur={true}
-    />
-    <InfoBox color="white" width="truncated" order="front">
-        <Heading>ABOUT</Heading>
-        <p style="color:black;">
-            Natalie Bancroft founded Raspberry Management in 2017 in Nashville,
-            TN, while helping candy pop darlings, Mariela, grow from just a
-            couple kids learning to use Logic in their bedrooms into some of
-            Nashville's most beloved indie sweethearts. RM has since developed
-            into one of southern California's favorite boutique artist
-            management groups.
-        </p>
-        <p style="color:black;">
-            RM is a collective of like-minded individuals, united by our primary
-            focus: to develop sustainable careers and long-lasting legacies for
-            our artists, and along the way, influence the musical landscape for
-            the better. Our diverse roster features many uniquely talented
-            artists from all genres including: Mariela, Emerson, Thomas Nixon,
-            and Flower Creek. The same entrepreneurial spirit that guides our
-            artist development extends into the fields of touring, commerce,
-            festivals, licensing, branded entertainment, and artist-driven
-            philanthropy.
-        </p>
-    </InfoBox>
+  <Hero
+    src="https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659301/about_sm_hohxth.jpg"
+    alt="Mariela performing at SheFest 2023"
+    blur={true}
+  />
+  <InfoBox color="white" width="truncated" order="front">
+    <Heading>ABOUT</Heading>
+    <p style="color:black;">
+      Natalie Bancroft founded Raspberry Management in 2017 in Nashville, TN,
+      while helping rock candy pop darlings, Mariela, grow from just a couple
+      kids learning to use Logic in their bedrooms into some of Nashville's most
+      beloved indie sweethearts. RM has since developed into one of southern
+      California's favorite boutique artist management groups.
+    </p>
+    <p style="color:black;">
+      RM is a collective of like-minded individuals, united by our primary
+      focus: to develop sustainable careers and long-lasting legacies for our
+      artists, and along the way, influence the musical landscape for the
+      better. Our diverse roster features many uniquely talented artists from
+      all genres including: <a href="/artists/mariela">Mariela</a>, <a
+        href="/artists/saint-misty">Saint Misty</a
+      >, and <a href="/artists/daddy">Daddy</a>. The same entrepreneurial spirit
+      that guides our artist development extends into the fields of touring,
+      commerce, festivals, licensing, branded entertainment, and artist-driven
+      philanthropy.
+    </p>
+  </InfoBox>
 </Layout>
 
 <style>
-    .header-image {
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-        object-position: right top;
-        filter: blur(3px);
-    }
+  .header-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: right top;
+    filter: blur(3px);
+  }
 
-    .about-container {
-        background-color: white;
-        min-height: 400px;
-        margin: -5rem 8rem;
-        position: relative;
-        z-index: 2;
-        padding: 2rem 8rem;
-    }
+  .about-container {
+    background-color: white;
+    min-height: 400px;
+    margin: -5rem 8rem;
+    position: relative;
+    z-index: 2;
+    padding: 2rem 8rem;
+  }
+
+  a {
+    cursor: pointer;
+  }
 </style>
