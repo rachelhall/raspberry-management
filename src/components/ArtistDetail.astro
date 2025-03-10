@@ -7,7 +7,7 @@ import InfoBox from "./InfoBox.astro";
 import Hero from "./Hero.astro";
 
 interface Props {
-    artist: Artist;
+  artist: Artist;
 }
 const { artist } = Astro.props;
 
@@ -15,86 +15,84 @@ const { bio, name, src } = artist;
 ---
 
 <div class="artist-detail">
-    <Hero src={src} alt=`Photo of ${name}` />
-    <InfoBox color="white" width="truncated">
+  <Hero src={src} alt=`Photo of ${name}` />
+  <InfoBox color="white" width="truncated">
+    <div>
+      <h1 class="band-name">{name}</h1>
+      <a class="link" href={artist.website}>{artist.website}</a>
+    </div>
+    <Socials />
+    <div class="band-info">
+      <div>
         <div>
-            <h1 class="band-name">{name}</h1>
-            <a class="link" href="www.mariela.band">www.mariela.band</a>
+          <Heading>ARTIST BIO</Heading>
+          <p class="text">
+            {bio}
+          </p>
         </div>
-        <Socials />
-        <div class="band-info">
-            <div>
-                <div>
-                    <Heading>ARTIST BIO</Heading>
-                    <p class="text">
-                        {bio}
-                    </p>
-                </div>
-            </div>
-            <div class="contact">
-                <Heading align="right" textColor="plum">CONTACT</Heading>
-                <div class="contact-group">
-                    <h2 class="text" 2>MANAGEMENT</h2>
-                    <a
-                        style="text-align: right;"
-                        href="mailto:natalie@raspberrymanagement.com"
-                        >Natalie Bancroft</a
-                    >
-                </div>
-                <div class="contact-group">
-                    <h2>BOOKING</h2>
-                    <a
-                        style="text-align: right;"
-                        href="mailto:natalie@raspberrymanagement.com"
-                        >Natalie Bancroft</a
-                    >
-                </div>
-            </div>
+      </div>
+      <div class="contact">
+        <Heading align="right" textColor="plum">CONTACT</Heading>
+        <div class="contact-group">
+          <h2 class="text" 2>MANAGEMENT</h2>
+          <a
+            style="text-align: right;"
+            href="mailto:natalie@raspberrymanagement.com">Natalie Bancroft</a
+          >
         </div>
-    </InfoBox>
+        <div class="contact-group">
+          <h2>BOOKING</h2>
+          <a
+            style="text-align: right;"
+            href="mailto:natalie@raspberrymanagement.com">Natalie Bancroft</a
+          >
+        </div>
+      </div>
+    </div>
+  </InfoBox>
 </div>
 
 <style lang="scss">
-    .contact {
-        display: flex;
-        flex-direction: column;
-    }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .contact-group {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-bottom: 1rem;
-    }
-    .artist-detail {
-        margin: auto;
-    }
-    .details {
-        max-width: 800px;
-        margin: 3rem auto;
-    }
+  .contact-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+  }
+  .artist-detail {
+    margin: auto;
+  }
+  .details {
+    max-width: 800px;
+    margin: 3rem auto;
+  }
 
+  .band-info {
+    display: flex;
+    flex: 1;
+    gap: 6rem;
+  }
+
+  .band-name {
+    color: var(--black);
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .text {
+    color: var(--black);
+  }
+
+  @media screen and (max-width: 480px) {
     .band-info {
-        display: flex;
-        flex: 1;
-        gap: 6rem;
+      flex-direction: column;
+      gap: 2rem;
     }
-
-    .band-name {
-        color: var(--black);
-        text-transform: uppercase;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .text {
-        color: var(--black);
-    }
-
-    @media screen and (max-width: 480px) {
-        .band-info {
-            flex-direction: column;
-            gap: 2rem;
-        }
-    }
+  }
 </style>
