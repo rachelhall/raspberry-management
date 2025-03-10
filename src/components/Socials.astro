@@ -1,27 +1,27 @@
 ---
 import { facebook, spotify, instagram } from "../lib/icons";
 import { Image } from "astro:assets";
+import type { Artist } from "../lib/types/artist";
+
+interface Props {
+  artist: Artist;
+}
+const { artist } = Astro.props;
 ---
 
 <div class="social-row">
-    <a href="https://www.instagram.com/mariela.band/" target="_blank">
-        <Image alt="Instagram" src={instagram} /></a
-    >
-    <a
-        href="https://open.spotify.com/artist/0fOdB0OUb1fBfHf8V4N3Hy?si=gmxooXNsQ9qUdYhnZ1ou6Q"
-        target="_blank"><Image alt="Spotify" src={spotify} /></a
-    >
-    <a
-        style="margin-top:-3px"
-        href="https://www.facebook.com/profile.php?id=61551043084078"
-        target="_blank"><Image alt="Facebook" src={facebook} /></a
-    >
+  <a href={artist.instagram} target="_blank">
+    <Image alt="Instagram" src={instagram} /></a
+  >
+  <a href={artist.spotify} target="_blank"
+    ><Image alt="Spotify" src={spotify} /></a
+  >
 </div>
 
 <style>
-    .social-row {
-        display: flex;
-        gap: 1rem;
-        margin: 1rem 0;
-    }
+  .social-row {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
 </style>
