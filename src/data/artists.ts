@@ -49,4 +49,13 @@ export const artists = [
       "https://open.spotify.com/artist/4kdJU3sybstAXUhWzZNRT1?si=CI8hHVynTCWUnJg7r4AsLQ",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741724951/Press21-SydneyValiente-photocredit_1_x7y4rc.jpg",
   },
+  {
+    slug: "hailey-wetzel",
+    name: "Hailey Wetzel",
+    bio: "Hailey Wetzel is an emerging talent in the San Diego music scene, known for her emotive vocals, heartfelt lyrics, and unique blend of indie, pop, and folk sounds. As a member of the indie folk band Lunas, Hailey takes on lead vocals and rhythm guitar, contributing to the band's signature sound and vibrant presence in the local scene. Her solo work showcases her gift for crafting distinctive melodies and harmonies that resonate with listeners. Hailey's music is deeply personal, exploring themes of beauty, longing, and self-discovery, with a rawness that connects with audiences on a deep emotional level. Hailey's most recent single, Lacquered Gold, available on all streaming platforms, highlights her evolving sound, featuring lush production and introspective lyrics. The track is a perfect example of her ability to create music that's both original and relatable, blending vulnerability with strength. Whether performing live with Lunas or as a solo artist, Hailey’s passion for music is undeniable. Her performances are a heartfelt experience that leaves listeners both uplifted and introspective, making her one to watch in the indie music scene.",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741731633/IMG_2007_aidyay.jpg",
+    spotify:
+      "https://open.spotify.com/artist/1JIPGwzHjOqrtKfn0MbEDb?si=tTYfHtE_RAWO9zkHpGNWaw",
+    instagram: "https://www.instagram.com/haileywetzelmusic/",
+  },
 ];

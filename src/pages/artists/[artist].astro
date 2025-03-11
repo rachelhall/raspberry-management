@@ -7,57 +7,110 @@ import { artists } from "../../data/artists";
 import InfoBox from "../../components/InfoBox.astro";
 import Hero from "../../components/Hero.astro";
 import ArtistDetail from "../../components/ArtistDetail.astro";
+import { cleanURL } from "../../lib/utils/cleanUrl";
+
 
 export function getStaticPaths() {
-  return [
-    {
-      params: {
-        artist: "mariela",
-      },
-      props: {
-        data: artists[0],
-      },
+  return artists.map((artist) => ({
+    params: {
+      artist: artist.slug,
     },
-    {
-      params: {
-        artist: "saint-misty",
-      },
-      props: {
-        data: artists[1],
-      },
+    props: {
+      data: artists.find((a) => a.slug === artist.slug),
     },
-    {
-      params: {
-        artist: "daddy",
-      },
-      props: {
-        data: artists[2],
-      },
-    },
-    {
-      params: {
-        artist: "poor-thing",
-      },
-      props: {
-        data: artists[3],
-      },
-    },
-    {
-      params: {
-        artist: "lindsay-white",
-      },
-      props: {
-        data: artists[4],
-      },
-    },
-  ];
+  }));
 }
-
-const { artist } = Astro.params;
 
 const { data } = Astro.props;
 ---
 
 <Layout title="Raspberry Management">
-  <ArtistDetail artist={data} />
+  <div class="artist-detail">
+    {data?.src &&<Hero src={data?.src} alt=`Photo of ${name}` />}
+    <InfoBox color="white" width="truncated">
+      <div>
+        <h1 class="band-name">{data?.name}</h1>
+        {
+          data?.website && (
+            <a class="link" href={data?.website} target="_blank">
+              {cleanURL(data?.website)}
+            </a>
+          )
+        }
+      </div>
+      {data && <Socials artist={data} />}
+      <div class="band-info">
+        <div>
+          <div>
+            <Heading>ARTIST BIO</Heading>
+            <p class="text">
+              {data?.bio}
+            </p>
+          </div>
+        </div>
+        <div class="contact">
+          <Heading align="right" textColor="plum">CONTACT</Heading>
+          <div class="contact-group">
+            <h2 class="text" 2>MANAGEMENT</h2>
+            <a
+              style="text-align: right;"
+              href="mailto:natalie@raspberrymanagement.com">Natalie Bancroft</a
+            >
+          </div>
+          <div class="contact-group">
+            <h2>BOOKING</h2>
+            <a
+              style="text-align: right;"
+              href="mailto:natalie@raspberrymanagement.com">Natalie Bancroft</a
+            >
+          </div>
+        </div>
+      </div>
+    </InfoBox>
+  </div>
+
+  <style lang="scss">
+    .contact {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-bottom: 1rem;
+    }
+    .artist-detail {
+      margin: auto;
+    }
+    .details {
+      max-width: 800px;
+      margin: 3rem auto;
+    }
+
+    .band-info {
+      display: flex;
+      flex: 1;
+      gap: 6rem;
+    }
+
+    .band-name {
+      color: var(--black);
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .text {
+      color: var(--black);
+    }
+
+    @media screen and (max-width: 480px) {
+      .band-info {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  </style>
 </Layout>
