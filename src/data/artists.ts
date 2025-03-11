@@ -31,4 +31,22 @@ export const artists = [
     bio: "Meet the intoxicating & sparkly indie rock brainchild of vocalist/guitarist Brooke Patterson and bassist Jessica Taylor; two high school acquaintances turned best Pals. This vibrant, queer indie pop-rock trio takes the undying, resentful spirit of emo music, sends it to therapy, and injects it into a punchy sonic landscape filled with melodic basslines, confessional lyricism, and cathartic hooks. Following their 2023 debut, Daddy has quickly made a splashy entrance into the Southern California music scene, with a reputation for packing venues at their vibrant, themed party shows. They just released their debut EP, “Hell, Ohio” on 02/28/25; available now on all major streaming platforms.",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741632964/daddy_tkauxa.jpg",
   },
+  // {
+  //   slug: "poor-thing",
+  //   name: "poor thing",
+  //   instagram: "https://www.instagram.com/poorthing.band/",
+  //   spotify:
+  //     "https://open.spotify.com/artist/72wyS562P0SgZ1FlwIZoYJ?si=Qaq6vdXVQUm-Ar3_mt080A",
+  //   src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741723772/IMG_2507_uwdtcm.jpg",
+  // },
+  {
+    slug: "lindsay-white",
+    name: "Lindsay White",
+    bio: "You'll laugh, you'll cry, you'll call your therapist. Two-time San Diego Music Award winner Lindsay White's undeniable talent has garnered recognition from prestigious events like the Telluride Bluegrass Festival and Kerrville Folk Festival, as well as from acclaimed publications such as American Songwriter Magazine. Her latest LP, 'Lights Out,' debuted at #2 on the iTunes Singer-Songwriter charts, garnering accolades as the #1 Album of the Year by Global Texan Chronicles and an esteemed SDMA for Best Singer-Songwriter. Subsequent singles have also charted on iTunes and earned her additional nominations at the San Diego Music Awards, including a win for Best Folk/Acoustic Song in 2022. Beyond her musical accomplishments, Lindsay's impact extends to the LGBTQ+ community. She has performed and served as a speaker/panelist at countless queer advocacy events, including a headlining performance at Moab Pride. She was featured on the cover of LGBT Weekly, and AfterEllen.com recognized her as one of '15 Lesbian/Bi/Queer Musical Artists You Need to Know.' With a gift for earnest storytelling that has the power to heal hearts and tickle funny bones, Lindsay has shared billing with celebrated acts like The Lone Bellow, David Crosby, Steve Poltz, Susanna Hoffs (The Bangles), Raining Jane featuring Jason Mraz, and more. White is also a writer, whose personal work explores topics including gender, queer identity, mental health, grief advocacy, social justice, and more. In 2022, she debuted Qulyn, a line of paperback journals 'for folks with feels.' She's currently working on a hybrid memoir/LP called 'Dead Mom Talking' about the mind-boggling, bed-wetting, gut-wrenching experience of reconciling with her estranged, deceased mother through mediumship.",
+    website: "https://www.lindsaywhitemusic.com/",
+    instagram: "https://www.instagram.com/lindsaywhitemusic",
+    spotify:
+      "https://open.spotify.com/artist/4kdJU3sybstAXUhWzZNRT1?si=CI8hHVynTCWUnJg7r4AsLQ",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741724951/Press21-SydneyValiente-photocredit_1_x7y4rc.jpg",
+  },
 ];
