@@ -69,4 +69,13 @@ export const artists = [
     instagram: "https://www.instagram.com/thejuliasage/",
     website: "https://linktr.ee/juliasage",
   },
+  {
+    slug: "britt-kusserow",
+    name: "Britt Kusserow",
+    bio: "Britt Kusserow is a queer singer-songwriter currently based in Los Angeles, by way of Vermont, New Zealand, Indiana, and Minnesota. Britt's lyrics frequently explore existential and spiritual themes, and their general style has been compared to artists like The Indigo Girls, The Weepies, Soccer Mommy, and Judee Sill.\nBritt was drawn to music at a young age, writing songs about Jesus and horses in Indiana in the early aughts. As she continued to write, she found that musical expression helped her navigate the coming out process in an un-affirming environment, and in fact helped her realize that she was queer in the first place.\nIn Britt's latest album, “Embers,” they explore existential themes related to socialized individuality and a loss of community engagement and collective understanding. Songs from this album (like “Highway 45” and “Siren”) also navigate the grief of how relationships change, and sometimes end, as we grow and evolve.\nOnstage Britt has a warm and familiar presence which draws the listener in, inviting them to co-create in stories that are at once personal and universal.",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741804432/IMG_5507_yjmafi.jpg",
+    spotify:
+      "https://open.spotify.com/artist/0sHYaaWoClTNvrYDyIo0KW?si=6c5B9ZODQgacEqc6A1hzlQ",
+    instagram: "https://www.instagram.com/brittkusserow/",
+  },
 ];
