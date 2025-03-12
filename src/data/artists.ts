@@ -34,8 +34,8 @@ export const artists = [
   {
     slug: "poor-thing",
     name: "poor thing",
-    bio: "https://vimeo.com/86195743",
     instagram: "https://www.instagram.com/poorthing.band/",
+    bio: "Poor thing is a San Diego local indie rock band that has dream pop and alt rock influence.  Jenna’s lyrics have an edgy raw and confessional self awareness.  It has been likened to pj Harvey, Alvvvays, neko case and Angel Olsen. ",
     spotify:
       "https://open.spotify.com/artist/72wyS562P0SgZ1FlwIZoYJ?si=Qaq6vdXVQUm-Ar3_mt080A",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741723772/IMG_2507_uwdtcm.jpg",
