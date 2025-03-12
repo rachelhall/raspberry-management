@@ -31,18 +31,19 @@ export const artists = [
     bio: "Meet the intoxicating & sparkly indie rock brainchild of vocalist/guitarist Brooke Patterson and bassist Jessica Taylor; two high school acquaintances turned best Pals. This vibrant, queer indie pop-rock trio takes the undying, resentful spirit of emo music, sends it to therapy, and injects it into a punchy sonic landscape filled with melodic basslines, confessional lyricism, and cathartic hooks. Following their 2023 debut, Daddy has quickly made a splashy entrance into the Southern California music scene, with a reputation for packing venues at their vibrant, themed party shows. They just released their debut EP, “Hell, Ohio” on 02/28/25; available now on all major streaming platforms.",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741632964/daddy_tkauxa.jpg",
   },
-  // {
-  //   slug: "poor-thing",
-  //   name: "poor thing",
-  //   instagram: "https://www.instagram.com/poorthing.band/",
-  //   spotify:
-  //     "https://open.spotify.com/artist/72wyS562P0SgZ1FlwIZoYJ?si=Qaq6vdXVQUm-Ar3_mt080A",
-  //   src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741723772/IMG_2507_uwdtcm.jpg",
-  // },
+  {
+    slug: "poor-thing",
+    name: "poor thing",
+    bio: "https://vimeo.com/86195743",
+    instagram: "https://www.instagram.com/poorthing.band/",
+    spotify:
+      "https://open.spotify.com/artist/72wyS562P0SgZ1FlwIZoYJ?si=Qaq6vdXVQUm-Ar3_mt080A",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741723772/IMG_2507_uwdtcm.jpg",
+  },
   {
     slug: "lindsay-white",
     name: "Lindsay White",
-    bio: "You'll laugh, you'll cry, you'll call your therapist. Two-time San Diego Music Award winner Lindsay White's undeniable talent has garnered recognition from prestigious events like the Telluride Bluegrass Festival and Kerrville Folk Festival, as well as from acclaimed publications such as American Songwriter Magazine. Her latest LP, 'Lights Out,' debuted at #2 on the iTunes Singer-Songwriter charts, garnering accolades as the #1 Album of the Year by Global Texan Chronicles and an esteemed SDMA for Best Singer-Songwriter. Subsequent singles have also charted on iTunes and earned her additional nominations at the San Diego Music Awards, including a win for Best Folk/Acoustic Song in 2022. Beyond her musical accomplishments, Lindsay's impact extends to the LGBTQ+ community. She has performed and served as a speaker/panelist at countless queer advocacy events, including a headlining performance at Moab Pride. She was featured on the cover of LGBT Weekly, and AfterEllen.com recognized her as one of '15 Lesbian/Bi/Queer Musical Artists You Need to Know.' With a gift for earnest storytelling that has the power to heal hearts and tickle funny bones, Lindsay has shared billing with celebrated acts like The Lone Bellow, David Crosby, Steve Poltz, Susanna Hoffs (The Bangles), Raining Jane featuring Jason Mraz, and more. White is also a writer, whose personal work explores topics including gender, queer identity, mental health, grief advocacy, social justice, and more. In 2022, she debuted Qulyn, a line of paperback journals 'for folks with feels.' She's currently working on a hybrid memoir/LP called 'Dead Mom Talking' about the mind-boggling, bed-wetting, gut-wrenching experience of reconciling with her estranged, deceased mother through mediumship.",
+    bio: "You'll laugh, you'll cry, you'll call your therapist. Two-time San Diego Music Award winner Lindsay White's undeniable talent has garnered recognition from prestigious events like the Telluride Bluegrass Festival and Kerrville Folk Festival, as well as from acclaimed publications such as American Songwriter Magazine. Her latest LP, 'Lights Out,' debuted at #2 on the iTunes Singer-Songwriter charts, garnering accolades as the #1 Album of the Year by Global Texan Chronicles and an esteemed SDMA for Best Singer-Songwriter. Subsequent singles have also charted on iTunes and earned her additional nominations at the San Diego Music Awards, including a win for Best Folk/Acoustic Song in 2022. \n\nBeyond her musical accomplishments, Lindsay's impact extends to the LGBTQ+ community. She has performed and served as a speaker/panelist at countless queer advocacy events, including a headlining performance at Moab Pride. She was featured on the cover of LGBT Weekly, and AfterEllen.com recognized her as one of '15 Lesbian/Bi/Queer Musical Artists You Need to Know.' \n\nWith a gift for earnest storytelling that has the power to heal hearts and tickle funny bones, Lindsay has shared billing with celebrated acts like The Lone Bellow, David Crosby, Steve Poltz, Susanna Hoffs (The Bangles), Raining Jane featuring Jason Mraz, and more. \n\nWhite is also a writer, whose personal work explores topics including gender, queer identity, mental health, grief advocacy, social justice, and more. In 2022, she debuted Qulyn, a line of paperback journals 'for folks with feels.' She's currently working on a hybrid memoir/LP called 'Dead Mom Talking' about the mind-boggling, bed-wetting, gut-wrenching experience of reconciling with her estranged, deceased mother through mediumship.",
     website: "https://www.lindsaywhitemusic.com/",
     instagram: "https://www.instagram.com/lindsaywhitemusic",
     spotify:
@@ -62,7 +63,7 @@ export const artists = [
   {
     slug: "julia-sage",
     name: "Julia Sage",
-    bio: `A songwriter since very early childhood, Chilean cantautora Julia Sage presently lives and plays in the greater San Diego area, where she performs as a solo artist, as a duo, and with her full band, "Julia Sage and The Bad Hombres," an eclectic ensemble of musicians, guest musicians, and some unusual instruments thrown in the mix. With her soulful vocals, witty and heartfelt bilingual (sometimes trilingual) songwriting as well as her cheeky stage personality, Julia will draw you in and keep you entertained during the entirety of the performance.`,
+    bio: `A songwriter since very early childhood, Chilean cantautora Julia Sage presently lives and plays in the greater San Diego area, where she performs as a solo artist, as a duo, and with her full band, "Julia Sage and The Bad Hombres," an eclectic ensemble of musicians, guest musicians, and some unusual instruments thrown in the mix. \n\nWith her soulful vocals, witty and heartfelt bilingual (sometimes trilingual) songwriting as well as her cheeky stage personality, Julia will draw you in and keep you entertained during the entirety of the performance.`,
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741759186/juliasagemagnet_g1moob.png",
     spotify:
       "https://open.spotify.com/artist/6qESQ4K6a6cWcTXR6eIVP4?si=O_7c0e7hQVWcUofNmOGBQA",
@@ -72,7 +73,8 @@ export const artists = [
   {
     slug: "britt-kusserow",
     name: "Britt Kusserow",
-    bio: "Britt Kusserow is a queer singer-songwriter currently based in Los Angeles, by way of Vermont, New Zealand, Indiana, and Minnesota. Britt's lyrics frequently explore existential and spiritual themes, and their general style has been compared to artists like The Indigo Girls, The Weepies, Soccer Mommy, and Judee Sill.\nBritt was drawn to music at a young age, writing songs about Jesus and horses in Indiana in the early aughts. As she continued to write, she found that musical expression helped her navigate the coming out process in an un-affirming environment, and in fact helped her realize that she was queer in the first place.\nIn Britt's latest album, “Embers,” they explore existential themes related to socialized individuality and a loss of community engagement and collective understanding. Songs from this album (like “Highway 45” and “Siren”) also navigate the grief of how relationships change, and sometimes end, as we grow and evolve.\nOnstage Britt has a warm and familiar presence which draws the listener in, inviting them to co-create in stories that are at once personal and universal.",
+    bio: "Britt Kusserow is a queer singer-songwriter currently based in Los Angeles, by way of Vermont, New Zealand, Indiana, and Minnesota. Britt's lyrics frequently explore existential and spiritual themes, and their general style has been compared to artists like The Indigo Girls, The Weepies, Soccer Mommy, and Judee Sill.\n\nBritt was drawn to music at a young age, writing songs about Jesus and horses in Indiana in the early aughts. As she continued to write, she found that musical expression helped her navigate the coming out process in an un-affirming environment, and in fact helped her realize that she was queer in the first place.\n\nIn Britt's latest album, “Embers,” they explore existential themes related to socialized individuality and a loss of community engagement and collective understanding. Songs from this album (like “Highway 45” and “Siren”) also navigate the grief of how relationships change, and sometimes end, as we grow and evolve.\n\nOnstage Britt has a warm and familiar presence which draws the listener in, inviting them to co-create in stories that are at once personal and universal.",
+    website: "https://www.brittkusserow.com/",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741804432/IMG_5507_yjmafi.jpg",
     spotify:
       "https://open.spotify.com/artist/0sHYaaWoClTNvrYDyIo0KW?si=6c5B9ZODQgacEqc6A1hzlQ",
