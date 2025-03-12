@@ -57,5 +57,16 @@ export const artists = [
     spotify:
       "https://open.spotify.com/artist/1JIPGwzHjOqrtKfn0MbEDb?si=tTYfHtE_RAWO9zkHpGNWaw",
     instagram: "https://www.instagram.com/haileywetzelmusic/",
+    website: "https://linktr.ee/hihailzz",
+  },
+  {
+    slug: "julia-sage",
+    name: "Julia Sage",
+    bio: `A songwriter since very early childhood, Chilean cantautora Julia Sage presently lives and plays in the greater San Diego area, where she performs as a solo artist, as a duo, and with her full band, "Julia Sage and The Bad Hombres," an eclectic ensemble of musicians, guest musicians, and some unusual instruments thrown in the mix. With her soulful vocals, witty and heartfelt bilingual (sometimes trilingual) songwriting as well as her cheeky stage personality, Julia will draw you in and keep you entertained during the entirety of the performance.`,
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741759186/juliasagemagnet_g1moob.png",
+    spotify:
+      "https://open.spotify.com/artist/6qESQ4K6a6cWcTXR6eIVP4?si=O_7c0e7hQVWcUofNmOGBQA",
+    instagram: "https://www.instagram.com/thejuliasage/",
+    website: "https://linktr.ee/juliasage",
   },
 ];
