@@ -3,20 +3,20 @@ import Heading from "../../components/Heading.astro";
 import Socials from "../../components/Socials.astro";
 import Layout from "../../layouts/Layout.astro";
 
-import { artists } from "../../data/artists";
+import { artistData } from "../../data/artists";
 import InfoBox from "../../components/InfoBox.astro";
 import Hero from "../../components/Hero.astro";
-import ArtistDetail from "../../components/ArtistDetail.astro";
 import { cleanURL } from "../../lib/utils/cleanUrl";
+import ArtistContact from "../../components/ArtistContact.astro";
 
 
 export function getStaticPaths() {
-  return artists.map((artist) => ({
+  return artistData.map((artist) => ({
     params: {
       artist: artist.slug,
     },
     props: {
-      data: artists.find((a) => a.slug === artist.slug),
+      data: artistData.find((a) => a.slug === artist.slug),
     },
   }));
 }
@@ -26,7 +26,7 @@ const { data } = Astro.props;
 
 <Layout title="Raspberry Management">
   <div class="artist-detail">
-    {data?.src &&<Hero src={data?.src} alt=`Photo of ${name}` />}
+    {data?.src &&<Hero src={data?.src} alt=`Photo of ${data?.name}` />}
     <InfoBox color="white" width="truncated">
       <div>
         <h1 class="band-name">{data?.name}</h1>
@@ -48,39 +48,19 @@ const { data } = Astro.props;
           ))}
           </div>
         </div>
-        <div class="contact">
-          <Heading align="right" textColor="plum">CONTACT</Heading>
-          <div class="contact-group">
-            <h2 class="text" 2>MANAGEMENT</h2>
-            <a
-              style="text-align: right;"
-              href="mailto:natalie@raspberrymanagement.com">Natalie Bancroft</a
-            >
-          </div>
-          <div class="contact-group">
-            <h2>BOOKING</h2>
-            <a
-              style="text-align: right;"
-              href="mailto:natalie@raspberrymanagement.com">Natalie Bancroft</a
-            >
-          </div>
-        </div>
+        <div>
+
+      <ArtistContact/>
       </div>
     </InfoBox>
   </div>
 
   <style lang="scss">
-    .contact {
-      display: flex;
-      flex-direction: column;
-    }
 
-    .contact-group {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin-bottom: 1rem;
+    iframe {
+      border: none;
     }
+    
     .artist-detail {
       margin: auto;
     }

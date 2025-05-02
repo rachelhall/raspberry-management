@@ -1,5 +1,6 @@
 ---
 import type { Artist } from "../lib/types/artist";
+import { optimizeCloudinaryUrl } from "../lib/utils/optimizeCloudinary";
 
 const { artist } = Astro.props;
 
@@ -12,7 +13,7 @@ interface Props {
   <a href=`/artists/${artist.slug}`>
     {
       artist.src ? (
-        <img height="300" src={artist.src} />
+        <img height="300" src={optimizeCloudinaryUrl(artist.src)} />
       ) : (
         <div class="photo-placeholder" />
       )

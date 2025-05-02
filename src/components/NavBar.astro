@@ -1,33 +1,35 @@
 ---
 // import { useState } from "preact/hooks";
 ---
+
 <nav>
-    <ul class="nav-list">
-        <li><a class="link" href="/artists">Artists</a></li>
-        <li><a class="link" href="/about/">About</a></li>
-    </ul>
+  <ul class="nav-list">
+    <li><a class="link" href="/artists">Artists</a></li>
+    <li><a class="link" href="/news">News</a></li>
+    <li><a class="link" href="/about/">About</a></li>
+  </ul>
 </nav>
 <style lang="scss">
-    ul {
-        list-style: none;
-    }
+  ul {
+    list-style: none;
+  }
 
-    a {
-        text-decoration: inherit;
-        cursor: pointer;
+  a {
+    text-decoration: inherit;
+    cursor: pointer;
+  }
+  .nav-list {
+    display: flex;
+    gap: 1rem;
+  }
+  .link {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--plum);
+    text-decoration: inherit;
+    cursor: pointer;
+    &:hover {
+      color: var(--plum-hover);
     }
-    .nav-list {
-        display: flex;
-        gap: 1rem;
-    }
-    .link {
-        font-size: 1.25rem;
-        font-weight: 500;
-        color: var(--plum);
-        text-decoration: inherit;
-        cursor: pointer;
-        &:hover {
-            color: var(--plum-hover);
-        }
-    }
+  }
 </style>

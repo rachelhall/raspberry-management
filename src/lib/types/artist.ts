@@ -6,4 +6,6 @@ export type Artist = {
   bio: string;
   name: string;
   src: string;
+  video?: string[];
+  news?: string[];
 };

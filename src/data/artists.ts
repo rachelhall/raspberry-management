@@ -1,4 +1,4 @@
-export const artists = [
+export const artistData = [
   {
     slug: "mariela",
     name: "Mariela",
@@ -20,6 +20,7 @@ export const artists = [
     website: "https://linktr.ee/saintmisty",
     bio: "Saint Misty, the musical project of Mikayla Gallagher, is a synth-pop artist based in San Diego, originally from Sacramento, CA. Her music explores her journey of leaving her religious upbringing and later a christian cult, ultimately embracing her identity as a lesbian. Drawing inspiration from punk, 70s, and 80s pop, Saint Misty creates a sound that’s both nostalgic and fresh, blending catchy synths with clever lyrics. Her goal is to uplift and empower the LGBTQ+ and women’s communities that helped her find her purpose and identity. Through her music, she brings the girls together, offering both healing and celebration of authenticity.",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741622321/IMG_1015_gwij9l.jpg",
+    video: "https://www.youtube.com/embed/o9ZLgE0HBVU?si=6WATwDTjayYDH0dp",
   },
   {
     slug: "daddy",

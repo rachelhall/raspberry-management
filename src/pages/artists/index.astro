@@ -3,7 +3,7 @@ import ArtistThumbnail from "../../components/ArtistThumbnail.astro";
 import Heading from "../../components/Heading.astro";
 import Hero from "../../components/Hero.astro";
 import InfoBox from "../../components/InfoBox.astro";
-import { artists } from "../../data/artists";
+import { artistData } from "../../data/artists";
 import Layout from "../../layouts/Layout.astro";
 ---
 
@@ -11,12 +11,11 @@ import Layout from "../../layouts/Layout.astro";
   <Hero
     src="https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659301/about_sm_hohxth.jpg"
     alt="Mariela performing at SheFest 2023"
-    blur={true}
   />
   <InfoBox color="white" width="truncated" order="front">
     <Heading>Artists</Heading>
     <div class="thumbnail-container">
-      {artists.map((artist) => <ArtistThumbnail artist={artist} />)}
+      {artistData.map((artist) => <ArtistThumbnail artist={artist} />)}
     </div>
   </InfoBox>
 </Layout>

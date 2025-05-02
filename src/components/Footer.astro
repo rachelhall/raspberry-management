@@ -4,53 +4,61 @@ import InfoBox from "./InfoBox.astro";
 ---
 
 <footer>
-    <InfoBox color="plum">
-        <div class="inner-container">
-            <h3 class="footnote">© 2025 RASPBERRY MANAGEMENT</h3>
-            <div>
-                <Heading textColor="white" align="right">CONTACT</Heading>
-                <h3 style=" text-align: right;">Natalie Bancroft</h3>
-                <a
-                    href="mailto:natalie@raspberrymanagement.com"
-                    style="color:white; margin-top:.75rem;text-align: right;"
-                >
-                    natalie@raspberrymanagement.com
-                </a>
-            </div>
-        </div>
-    </InfoBox>
+  <InfoBox color="plum">
+    <div class="inner-container">
+      <div class="footnote-container">
+        <h3 class="footnote">© 2025 RASPBERRY MANAGEMENT</h3>
+        <h5>Boutique Booking Agency & Artist Management</h5>
+      </div>
+      <div>
+        <Heading textColor="white" align="right">CONTACT</Heading>
+        <h3 style=" text-align: right;">Natalie Bancroft</h3>
+        <a
+          href="mailto:natalie@raspberrymanagement.com"
+          style="color:white; margin-top:.75rem;text-align: right;"
+        >
+          natalie@raspberrymanagement.com
+        </a>
+      </div>
+    </div>
+  </InfoBox>
 </footer>
 <style>
+  footer {
+    background-color: var(--plum);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -10rem 0 0;
+    padding: 6rem 0 2rem;
+    width: 100%;
+  }
+  .footnote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  @media screen and (max-width: 480px) {
     footer {
-        background-color: var(--plum);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: -10rem 0 0;
-        padding: 6rem 0 2rem;
-        width: 100%;
+      padding: 0;
+      margin: 0;
+      align-self: flex-end;
     }
-
+    .footnote {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      font-weight: 100;
+    }
     .inner-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+      align-items: flex-end;
+      flex-direction: column-reverse;
     }
-
-    @media screen and (max-width: 480px) {
-        footer {
-            padding: 0;
-            margin: 0;
-            align-self: flex-end;
-        }
-        .footnote {
-            margin-top: 1rem;
-            font-size: 0.75rem;
-            font-weight: 100;
-        }
-        .inner-container {
-            align-items: flex-end;
-            flex-direction: column-reverse;
-        }
-    }
+  }
 </style>
