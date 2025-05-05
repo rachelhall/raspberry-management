@@ -1,3 +1,10 @@
+function optimizeCloudinaryUrl(url: string, options = "f_auto,q_auto") {
+  if (!url.includes("res.cloudinary.com") || !url.includes("/upload/"))
+    return url;
+
+  return url.replace("/upload/", `/upload/${options}/`);
+}
+
 export const artistData = [
   {
     slug: "mariela",
@@ -9,7 +16,9 @@ export const artistData = [
     bio: ` Mariela's indie rock sensibilities have been compared to Jenny Lewis, The Aces and
                 Soccer Mommy. They've played all across the southeast while they were based in Nashville before moving out to San Diego in January 2022.
                 Since then, the band has been picking up steam in southern California, playing San Diego Prsluge Festival, SheFest and most rececntly the slugyllwild Flim Flam Festival.`,
-    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1694659258/mariela_hb0vdq.jpg",
+    src: optimizeCloudinaryUrl(
+      "https://res.cloudinary.com/dyspjkmgs/image/upload/v1746122679/RachelHall-032_lonucu.jpg"
+    ),
   },
   {
     slug: "saint-misty",
@@ -80,5 +89,15 @@ export const artistData = [
     spotify:
       "https://open.spotify.com/artist/0sHYaaWoClTNvrYDyIo0KW?si=6c5B9ZODQgacEqc6A1hzlQ",
     instagram: "https://www.instagram.com/brittkusserow/",
+  },
+  {
+    slug: "please-ask-for-paul",
+    name: "Please Ask for Paul",
+    bio: "Please Ask for Paul is an emerging indie music project from Southern California led by Marlo J Smith and Joshua McCleskey. Longing to express themselves beyond comfortable orbit, PAFP is the resulting spectral equinox between two kindred spirits seeking company within their songs. Propelled by their signature moon-jeweled vocals and radiantly phosphorescent guitar, ‘Paul’ surreptitiously blends their ancient phantom slow dance with burgeoning restless angst.\n\n\nNominated as 'Best New Artist' by the San Diego Music Awards, and subsequently as 'Best Indie/Alternative Artist', Please Ask for Paul sailed into the SoCal scene with their debut EP New Runes in October of 2023. Recorded with local producer Scott Seader, 'Paul's' freshman EP showcases their mythical storytelling and expansive soundscapes. \n\n\nEntertainers at heart, Paul offers a performance that is cinematic, dynamic and emotive. Ever-evolving, PAFP is an amorphous entity that takes many shapes and forms, from an atmospheric duo to full band high-energy indie rock, and many things in between. At the core of it all is honest songwriting and captivating performance. Paul has been touring the southwest and recently played to a sold out crowd at the legendary Pappy & Harriet’s in Pioneertown, CA. They have also been frequenting SoCal venues such as the world-famous Casbah and iconic Soda Bar.\n\n\nPaul’s ethereal and often dark and moody melodies led to them being invited by decorated producer Jeff Berkley to record songs live in the bowels of an underwater dinosaur exhibit in the Sternberg Museum of Natural History in Hays, KS.  No headphones or overdubs, all in-the-moment live recordings to capture the unique sonic offerings of the space. The expansive reverb captured in this room matched with PAFP’s celestial dreamscapes encapsulated a transcending tremor in time. They expect to begin releasing the Paleoverb Project songs beginning summer of 2025.\n\n\nPost-New Runes, Please Ask for Paul has been consistently writing and releasing new songs, while simultaneously wrapping up chapter two of their ongoing musical novella. The Realm of Hungry Ghosts is a forlorn examination into the intricacies of death, grief and the healing process thereafter. Thumbnails, the first of three songs on the aforementioned upcoming EP, explores these difficult themes musically and lyrically as Smith pens, “light, threads of light is all we are, crashing through the other side,” illuminating their perspective that with the absence of our physical bodies our souls can still find ways to refasten. As this somber chapter painstakingly comes to a close, PAFP has hatched a new batch of songs that keep true to their mystical ambiance with plans to begin recording in summer 2025.",
+    website: "http://www.pleaseaskforpaul.com/",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1746468654/pafp_n3wiwm.jpg",
+    spotify:
+      "https://open.spotify.com/artist/6kmVzopLrMnagTaojQMuhn?si=BvghIS6NQ8KJ8FH2-O0SDA",
+    instagram: "https://www.instagram.com/please_askforpaul/",
   },
 ];
