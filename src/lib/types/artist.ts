@@ -8,4 +8,5 @@ export type Artist = {
   src: string;
   video?: string[];
   news?: string[];
+  oneSheet?: string;
 };

@@ -8,6 +8,7 @@ import InfoBox from "../../components/InfoBox.astro";
 import Hero from "../../components/Hero.astro";
 import { cleanURL } from "../../lib/utils/cleanUrl";
 import ArtistContact from "../../components/ArtistContact.astro";
+import type { Artist } from "../../lib/types/artist";
 
 
 export function getStaticPaths() {
@@ -21,7 +22,7 @@ export function getStaticPaths() {
   }));
 }
 
-const { data } = Astro.props;
+const  data  = Astro.props.data as Artist;
 ---
 
 <Layout title="Raspberry Management">
@@ -50,7 +51,7 @@ const { data } = Astro.props;
         </div>
         <div>
 
-      <ArtistContact/>
+      <ArtistContact artist={data}/>
       </div>
     </InfoBox>
   </div>
@@ -60,7 +61,7 @@ const { data } = Astro.props;
     iframe {
       border: none;
     }
-    
+
     .artist-detail {
       margin: auto;
     }

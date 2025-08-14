@@ -1,5 +1,10 @@
 ---
+import type { Artist } from "../lib/types/artist";
 import Heading from "./Heading.astro";
+interface Props {
+  artist: Artist;
+}
+const { artist } = Astro.props;
 ---
 
 <div class="contact">
@@ -16,6 +21,16 @@ import Heading from "./Heading.astro";
       >Natalie Bancroft</a
     >
   </div>
+  {
+    artist.oneSheet && (
+      <div class="contact-group">
+        <h2>EPK</h2>
+        <a target="_blank" style="text-align: right;" href={artist.oneSheet}>
+          One Sheet
+        </a>
+      </div>
+    )
+  }
 </div>
 <style lang="scss">
   .contact {
