@@ -99,6 +99,6 @@ export const artistData = [
     spotify:
       "https://open.spotify.com/artist/6kmVzopLrMnagTaojQMuhn?si=BvghIS6NQ8KJ8FH2-O0SDA",
     instagram: "https://www.instagram.com/please_askforpaul/",
-    oneSheet: "../../../public/pafp-one-sheet.pdf",
+    oneSheet: "/public/pafp-one-sheet.pdf",
   },
 ];
