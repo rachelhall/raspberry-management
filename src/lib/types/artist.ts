@@ -2,7 +2,8 @@ export type Artist = {
   slug: string;
   website?: string;
   instagram: string;
-  spotify: string;
+  youtube?: string;
+  spotify?: string;
   bio: string;
   name: string;
   src: string;

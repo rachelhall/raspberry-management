@@ -1,5 +1,5 @@
 ---
-import { facebook, spotify, instagram } from "../lib/icons";
+import { youtube, spotify, instagram } from "../lib/icons";
 import { Image } from "astro:assets";
 import type { Artist } from "../lib/types/artist";
 
@@ -13,9 +13,20 @@ const { artist } = Astro.props;
   <a href={artist.instagram} target="_blank">
     <Image alt="Instagram" src={instagram} /></a
   >
-  <a href={artist.spotify} target="_blank"
-    ><Image alt="Spotify" src={spotify} /></a
-  >
+  {
+    artist.spotify && (
+      <a href={artist.spotify} target="_blank">
+        <Image alt="Spotify" src={spotify} />
+      </a>
+    )
+  }
+  {
+    artist.youtube && (
+      <a href={artist.youtube} target="_blank">
+        <Image alt="Youtube" src={youtube} />
+      </a>
+    )
+  }
 </div>
 
 <style>

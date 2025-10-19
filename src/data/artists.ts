@@ -101,4 +101,12 @@ export const artistData = [
     instagram: "https://www.instagram.com/please_askforpaul/",
     oneSheet: "/pafp-one-sheet.pdf",
   },
+  {
+    slug: "the-dimes",
+    name: "The Dimes",
+    bio: "The Dimes are a 6-piece nonsense rock band from San Diego, CA. Formed in 2024, their onstage chemistry feels like a lifelong bond. Known for their high-energy sets that swing from riot grrrl to queer yearning to absurdism. The Dimes are here to make you feel something. Anything!",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1760838247/000026120004_gm4pft.jpg",
+    instagram: "https://www.instagram.com/thedimesofficial/",
+    youtube: "https://www.youtube.com/watch?v=VVvogpFjuLA",
+  },
 ];
