@@ -42,6 +42,24 @@ export const artistData = [
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741632964/daddy_tkauxa.jpg",
   },
   {
+    slug: "cope",
+    name: "The Band Cope",
+    spotify:
+      "https://open.spotify.com/artist/5nQgaSNOVbQncdju5Dafhn?si=DFnyJ9z6Ts2Rt2_r0WwOkQ",
+    website: "https://www.the-band-cope.com/",
+    bio: "The Band COPE is a 3-piece indie/alternative band from San Diego making the kind of music your mom needed during her divorce. With a sound that searches for light in the void, Ellie, Marc, and Bill craft songs for that happy-sad-everything feeling. Best friends for nearly a decade, the members of Cope have built a project rooted in experimentation, growth, and pure fun. After years of trying different sounds and stages, they’ve landed on one thing that matters most: if it’s not fun wtf are you doing?",
+    instagram: "https://www.instagram.com/thebandcope/",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1761414882/cope_jogwql.jpg",
+  },
+  {
+    slug: "the-dimes",
+    name: "The Dimes",
+    bio: "The Dimes are a 6-piece nonsense rock band from San Diego, CA. Formed in 2024, their onstage chemistry feels like a lifelong bond. Known for their high-energy sets that swing from riot grrrl to queer yearning to absurdism. The Dimes are here to make you feel something. Anything!",
+    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1760838247/000026120004_gm4pft.jpg",
+    instagram: "https://www.instagram.com/thedimesofficial/",
+    youtube: "https://www.youtube.com/watch?v=VVvogpFjuLA",
+  },
+  {
     slug: "poor-thing",
     name: "poor thing",
     instagram: "https://www.instagram.com/poorthing.band/",
@@ -100,13 +118,5 @@ export const artistData = [
       "https://open.spotify.com/artist/6kmVzopLrMnagTaojQMuhn?si=BvghIS6NQ8KJ8FH2-O0SDA",
     instagram: "https://www.instagram.com/please_askforpaul/",
     oneSheet: "/pafp-one-sheet.pdf",
-  },
-  {
-    slug: "the-dimes",
-    name: "The Dimes",
-    bio: "The Dimes are a 6-piece nonsense rock band from San Diego, CA. Formed in 2024, their onstage chemistry feels like a lifelong bond. Known for their high-energy sets that swing from riot grrrl to queer yearning to absurdism. The Dimes are here to make you feel something. Anything!",
-    src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1760838247/000026120004_gm4pft.jpg",
-    instagram: "https://www.instagram.com/thedimesofficial/",
-    youtube: "https://www.youtube.com/watch?v=VVvogpFjuLA",
   },
 ];
