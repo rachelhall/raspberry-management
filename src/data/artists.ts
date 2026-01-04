@@ -13,9 +13,7 @@ export const artistData = [
       "https://open.spotify.com/artist/0fOdB0OUb1fBfHf8V4N3Hy?si=SBgCCqWPTmm82ci2blviSQ",
     instagram: "https://www.instagram.com/mariela.band",
     website: "www.mariela.band",
-    bio: ` Mariela's indie rock sensibilities have been compared to Jenny Lewis, The Aces and
-                Soccer Mommy. They've played all across the southeast while they were based in Nashville before moving out to San Diego in January 2022.
-                Since then, the band has been picking up steam in southern California, playing San Diego Prsluge Festival, SheFest and most rececntly the slugyllwild Flim Flam Festival.`,
+    bio: "Mariela emerges as a bold new voice in indie-pop with The Underglow, fusing vibrant production, lyrical honesty, and trans femme freedom into a dance party where everyone is invited. Across ten exuberant tracks, Mariela turns personal liberation into communal joy with a mix of roaring guitars, sugary synths, and cathartic anthems that explore the loss of her marriage and the way that self-actualization has put a strain on her relationships with her family of origin. \n\n Moriah, explores the similarities between the biblical story, “The binding of Isaac on Mt. Moriah” to the way evangelical parents relate to their queer children while The Girls of Summer playfully reimagines a queer twist on the Don Henley classic. \n\n Co-written with a dynamic circle of queer and allied artists, including Grammy-winner Melody Walker, the record’s sound pulses with the energy of friendship and chosen family. It’s as bold and bright as the life Mariela is carving for herself. \n\n Following a 30+ date U.S. tour supporting Billboard-charting artist Flamy Grant, songwriter showcases in Nashville, and Pride events from San Diego to Seattle, Mariela continues to expand her reach and make a lasting impression on audiences far and wide.",
     src: optimizeCloudinaryUrl(
       "https://res.cloudinary.com/dyspjkmgs/image/upload/v1746122679/RachelHall-032_lonucu.jpg"
     ),
@@ -26,8 +24,9 @@ export const artistData = [
     spotify:
       "https://open.spotify.com/artist/3ATKsyAg4Ua8cs2VJJN0CC?si=3IsHg_eCQa--qz4TdVJJmA",
     instagram: "https://www.instagram.com/thesaintmisty/",
+    tiktok: "https://www.tiktok.com/@sexybenfranklin",
     website: "https://linktr.ee/saintmisty",
-    bio: "Saint Misty, the musical project of Mikayla Gallagher, is a synth-pop artist based in San Diego, originally from Sacramento, CA. Her music explores her journey of leaving her religious upbringing and later a christian cult, ultimately embracing her identity as a lesbian. Drawing inspiration from punk, 70s, and 80s pop, Saint Misty creates a sound that’s both nostalgic and fresh, blending catchy synths with clever lyrics. Her goal is to uplift and empower the LGBTQ+ and women’s communities that helped her find her purpose and identity. Through her music, she brings the girls together, offering both healing and celebration of authenticity.",
+    bio: "Saint Misty, is an up-and-coming synth-pop artist based in San Diego, California. Her sugar-coated hooks explore her journey from growing up in a religious home and joining a radical christian cult to finally breaking free to embrace her identity as a lesbian in a way that will have you humming them all day long before you even start to unpack their layered meaning. \n\n\n Drawing inspiration from punk and 70s/80s pop, Saint Misty blends catchy synths and clever lyrics to create a sound that feels simultaneously fresh and nostalgic. Her music aims to uplift and empower women and the LGBTQ+ communities that helped her find her purpose and identity. \n\n\n The fandom surrounding her artistry is all about bringing the girls together, offering healing and authenticity to both her blossoming online community and every fan lucky enough to be in the room when she steps on stage.",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741622321/IMG_1015_gwij9l.jpg",
     video: "https://www.youtube.com/embed/o9ZLgE0HBVU?si=6WATwDTjayYDH0dp",
   },
