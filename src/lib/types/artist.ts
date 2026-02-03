@@ -8,6 +8,7 @@ export type Artist = {
   bio: string;
   name: string;
   src: string;
+  bannerSrc?: string;
   video?: string[];
   news?: string[];
   oneSheet?: string;

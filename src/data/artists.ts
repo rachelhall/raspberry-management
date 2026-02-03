@@ -9,13 +9,11 @@ export const artistData = [
   {
     slug: "mariela",
     name: "Mariela",
-    spotify:
-      "https://open.spotify.com/artist/0fOdB0OUb1fBfHf8V4N3Hy?si=SBgCCqWPTmm82ci2blviSQ",
     instagram: "https://www.instagram.com/mariela.band",
     website: "www.mariela.band",
     bio: "Mariela emerges as a bold new voice in indie-pop with The Underglow, fusing vibrant production, lyrical honesty, and trans femme freedom into a dance party where everyone is invited. Across ten exuberant tracks, Mariela turns personal liberation into communal joy with a mix of roaring guitars, sugary synths, and cathartic anthems that explore the loss of her marriage and the way that self-actualization has put a strain on her relationships with her family of origin. \n\n Moriah, explores the similarities between the biblical story, “The binding of Isaac on Mt. Moriah” to the way evangelical parents relate to their queer children while The Girls of Summer playfully reimagines a queer twist on the Don Henley classic. \n\n Co-written with a dynamic circle of queer and allied artists, including Grammy-winner Melody Walker, the record’s sound pulses with the energy of friendship and chosen family. It’s as bold and bright as the life Mariela is carving for herself. \n\n Following a 30+ date U.S. tour supporting Billboard-charting artist Flamy Grant, songwriter showcases in Nashville, and Pride events from San Diego to Seattle, Mariela continues to expand her reach and make a lasting impression on audiences far and wide.",
     src: optimizeCloudinaryUrl(
-      "https://res.cloudinary.com/dyspjkmgs/image/upload/v1746122679/RachelHall-032_lonucu.jpg"
+      "https://res.cloudinary.com/dyspjkmgs/image/upload/v1746122679/RachelHall-032_lonucu.jpg",
     ),
   },
   {
@@ -39,6 +37,19 @@ export const artistData = [
     website: "https://www.daddy-music.com",
     bio: "Meet the intoxicating & sparkly indie rock brainchild of vocalist/guitarist Brooke Patterson and bassist Jessica Taylor; two high school acquaintances turned best Pals. This vibrant, queer indie pop-rock trio takes the undying, resentful spirit of emo music, sends it to therapy, and injects it into a punchy sonic landscape filled with melodic basslines, confessional lyricism, and cathartic hooks. Following their 2023 debut, Daddy has quickly made a splashy entrance into the Southern California music scene, with a reputation for packing venues at their vibrant, themed party shows. They just released their debut EP, “Hell, Ohio” on 02/28/25; available now on all major streaming platforms.",
     src: "https://res.cloudinary.com/dyspjkmgs/image/upload/v1741632964/daddy_tkauxa.jpg",
+  },
+  {
+    slug: "lauren-horbal",
+    name: "Lauren Horbal",
+    spotify:
+      "https://open.spotify.com/artist/16kcANKvgp2nFym9MkBRlN?si=WIBOtxPsTTixETrgADGByg",
+    instagram: "https://www.instagram.com/laurhor34/",
+    bio: "Lauren horbal writes songs for people who cry on the dance floor. After years of writing songs with her band Fame & Fiction, it's time for her to tell some of her own stories in her own voice. She is a multi-instrumentalist with a soft spot for syncopated beats and choruses you can scream along to. Millennial oversharing. Pretty queer. Genre neutral.",
+    bannerSrc:
+      "https://res.cloudinary.com/dyspjkmgs/image/upload/v1770149592/Screenshot_2026-02-03_at_1.58.16_PM_nw262t.png",
+    src: optimizeCloudinaryUrl(
+      "https://res.cloudinary.com/dyspjkmgs/image/upload/v1770149218/Screenshot_2026-02-03_at_1.59.37_PM_lzefag.png",
+    ),
   },
   {
     slug: "cope",

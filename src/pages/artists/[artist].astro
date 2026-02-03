@@ -22,12 +22,13 @@ export function getStaticPaths() {
   }));
 }
 
-const  data  = Astro.props.data as Artist;
+const data = Astro.props.data as Artist;
+const heroSrc = data?.bannerSrc ?? data?.src;
 ---
 
 <Layout title="Raspberry Management">
   <div class="artist-detail">
-    {data?.src &&<Hero src={data?.src} alt=`Photo of ${data?.name}` />}
+    {heroSrc && <Hero src={heroSrc} alt=`Photo of ${data?.name}` />}
     <InfoBox color="white" width="truncated">
       <div>
         <h1 class="band-name">{data?.name}</h1>
